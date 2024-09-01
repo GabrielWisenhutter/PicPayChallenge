@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "HfRHXEslivdd2lObLYI97x3InOlDdnJ7nNYguH7FLAfeSN3F65BKf25faim6tCOjbEPe1b8XyLizrgFKpeMSAg==",
+  "success": true,
+  "projectFilePath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

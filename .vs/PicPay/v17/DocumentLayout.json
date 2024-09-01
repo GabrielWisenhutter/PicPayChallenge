@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BB5F08E-BA68-4C87-A631-62766D71E9C3}|PicPay.Domain\\PicPay.Domain.csproj|d:\\arquivosdeprogramacao\\csharp\\bma\\apresentacaodeconceito\\repositorypattern\\picpay\\picpay.domain\\handlers\\wallethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BB5F08E-BA68-4C87-A631-62766D71E9C3}|PicPay.Domain\\PicPay.Domain.csproj|solutionrelative:picpay.domain\\handlers\\wallethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 287,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WalletHandler.cs",
+              "DocumentMoniker": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\Handlers\\WalletHandler.cs",
+              "RelativeDocumentMoniker": "PicPay.Domain\\Handlers\\WalletHandler.cs",
+              "ToolTip": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\Handlers\\WalletHandler.cs",
+              "RelativeToolTip": "PicPay.Domain\\Handlers\\WalletHandler.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T14:35:34.764Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

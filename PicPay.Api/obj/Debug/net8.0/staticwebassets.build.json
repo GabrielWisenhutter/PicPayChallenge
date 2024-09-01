@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OHiwrghiEWBWfLcNmkaF6M4EMDBN+EBkUPZZuyYeexA=",
+  "Source": "PicPay.Api",
+  "BasePath": "_content/PicPay.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

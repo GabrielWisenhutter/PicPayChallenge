@@ -1,0 +1,17 @@
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\bin\Debug\net8.0\PicPay.Infra.Data.deps.json
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\bin\Debug\net8.0\PicPay.Infra.Data.runtimeconfig.json
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\bin\Debug\net8.0\PicPay.Infra.Data.dll
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\bin\Debug\net8.0\PicPay.Infra.Data.pdb
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\bin\Debug\net8.0\PicPay.Domain.dll
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\bin\Debug\net8.0\PicPay.Domain.pdb
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.csproj.AssemblyReference.cache
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.AssemblyInfoInputs.cache
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.AssemblyInfo.cs
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.csproj.CoreCompileInputs.cache
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.I.C60AE97B.Up2Date
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.dll
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\refint\PicPay.Infra.Data.dll
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.pdb
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\PicPay.Infra.Data.genruntimeconfig.cache
+D:\ArquivosDeProgramacao\Csharp\Bma\ApresentacaoDeConceito\RepositoryPattern\PicPay\PicPay.Infra.Data\obj\Debug\net8.0\ref\PicPay.Infra.Data.dll

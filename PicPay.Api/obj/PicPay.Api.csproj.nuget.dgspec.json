@@ -1,0 +1,240 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Api\\PicPay.Api.csproj": {}
+  },
+  "projects": {
+    "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Api\\PicPay.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Api\\PicPay.Api.csproj",
+        "projectName": "PicPay.Api",
+        "projectPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Api\\PicPay.Api.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj": {
+                "projectPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj"
+              },
+              "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Infra.Data\\PicPay.Infra.Data.csproj": {
+                "projectPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Infra.Data\\PicPay.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj",
+        "projectName": "PicPay.Domain",
+        "projectPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Infra.Data\\PicPay.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Infra.Data\\PicPay.Infra.Data.csproj",
+        "projectName": "PicPay.Infra.Data",
+        "projectPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Infra.Data\\PicPay.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj": {
+                "projectPath": "D:\\ArquivosDeProgramacao\\Csharp\\Bma\\ApresentacaoDeConceito\\RepositoryPattern\\PicPay\\PicPay.Domain\\PicPay.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
