@@ -2,6 +2,7 @@
 using PicPay.Domain.DTOs.TransferCommands;
 using PicPay.Domain.Entities;
 using PicPay.Domain.Enums;
+using PicPay.Domain.Extensions;
 using PicPay.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -15,21 +16,23 @@ namespace PicPay.Domain.Handlers
     {
         private readonly ITransferRepository _transferRepository;
         private readonly IWalletRepository _walletRepository;
+        private readonly Notification _notification;
         public TransferHandler(ITransferRepository transferRepository, IWalletRepository walletRepository)
         {
             _transferRepository = transferRepository;
             _walletRepository = walletRepository;
+            _notification = new Notification();
         }
         public async Task<BaseResult> Handle(NewTransferCommand command)
         {
             command.Validate();
-
             if (!command.IsValid)
                 return new Result<List<string>>(400, "Um ou mais erros", command.Messages);
             
-            var validateResult = await ValidateTransfer(command.PayerId, command.PayeeId, command);
-            if (validateResult.Status != 200)
-                return new Result<string>(validateResult.Status, validateResult.Message ?? string.Empty);
+            await ValidateTransfer(command.PayerId, command.PayeeId, command);
+            if (!_notification.IsValid)
+                return new Result<List<string>>(400, "One or more errors", _notification.Messages);
+
 
             await TransferAmount(command.PayerId, command.PayeeId, command);
             await _transferRepository.Create(Transfer.Factories.Create(command));
@@ -49,21 +52,22 @@ namespace PicPay.Domain.Handlers
             await _walletRepository.Update(payer);
         }
 
-        private async Task<Result<string>> ValidateTransfer(Guid payerId, Guid payeeId, NewTransferCommand command)
+        private async Task ValidateTransfer(Guid payerId, Guid payeeId, NewTransferCommand command)
         {
             var payer = await _walletRepository.GetById(payerId);
             var payee = await _walletRepository.GetById(payeeId);
 
             if (payer == null || payee == null)
-                return new Result<string>(404, "Payer or Payee not found");
-
+            {
+                _notification.AddNotification("Payer or Payee not found");
+                return;
+            }
+             
             if (payer.Type == EWalletType.Merchant)
-                return new Result<string>(400, "Merchant can't do transactions");
+                _notification.AddNotification("Merchant can't do transactions");
 
             if (payer.Amount < command.Amount)
-                return new Result<string>(400, "Payer amount is smaller than the value of transaction");
-
-            return new Result<string>(200, "Transfer is valid");
+                _notification.AddNotification("Payer amount is smaller than the value of transaction");
         }
     }
 }
