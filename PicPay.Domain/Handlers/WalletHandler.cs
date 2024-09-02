@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PicPay.Domain.Extensions;
 
 namespace PicPay.Domain.Handlers
 {
@@ -14,46 +15,51 @@ namespace PicPay.Domain.Handlers
     {
         private readonly IWalletRepository _repository;
         private readonly ISecurityService _securityService;
+        private readonly Notification _notification;
         public WalletHandler(IWalletRepository repository, ISecurityService securityService)
         {
             _repository = repository;
             _securityService = securityService;
+            _notification = new Notification();
         }
         public async Task<BaseResult> Handle(NewWalletCommand command)
         {
             command.Validate();
             if (!command.IsValid)
-                return new Result<List<string>>(400, "Por favor verifique os campos com erro no objeto { - Data - }", command.Messages);
+                return new Result<List<string>>(400, "Please, check the errors in 'Data' object", command.Messages);
 
-            if (await CheckIfEmailExists(command))
-                return new Result<string>(400, "Email exists.");
-            if (await CheckIfDocumentNumberExist(command))
-                return new Result<string>(400, "DocumentNumber exists.");
+            await ValidateBusinessRules(command);
+            if (!_notification.IsValid)
+                return new Result<List<string>>(400, "One or more errors", _notification.Messages);
 
 
             var hashPasssword = _securityService.GenerateHash(command.Password);
             command.Password = hashPasssword;
             var wallet = Wallet.Factories.Create(command);
-            await _repository.Create(wallet);
+            await _repository.Create(Wallet.Factories.Create(command));
             return new Result<Wallet>(201, "Wallete created", wallet);
         }
 
-        private async Task<bool> CheckIfDocumentNumberExist(NewWalletCommand command)
+        #region Validation methods
+        private async Task ValidateBusinessRules(NewWalletCommand command)
+        {
+            await CheckIfDocumentNumberExist(command);
+            await CheckIfEmailExists(command);
+        }
+        private async Task CheckIfDocumentNumberExist(NewWalletCommand command)
         {
             var wallet = await _repository.GetByDocumentNumber(command.DocumentNumber);
 
             if (wallet != null)
-                return true;
-            return false;
+                _notification.AddNotification("An account with this document number already exists");
         }
-
-        public async Task<bool> CheckIfEmailExists(NewWalletCommand command)
+        public async Task CheckIfEmailExists(NewWalletCommand command)
         {
             var wallet = await _repository.GetByEmail(command.Email);
 
             if (wallet != null)
-                return true;
-            return false;
+                _notification.AddNotification("An account with that Email already exists");
         }
+        #endregion
     }
 }
