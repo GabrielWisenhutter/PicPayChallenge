@@ -15,13 +15,28 @@ namespace PicPay.Domain.Entities
         public string DocumentNumber { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public decimal Amount { get; set; }
+        public decimal Amount { get; private set; }
         public EWalletType Type { get; set; }
         public ICollection<Transfer> PaidTransfers { get; set; } = new List<Transfer>();
         public ICollection<Transfer>? ReceivedTransfers { get; set; } = new List<Transfer>();
 
         private Wallet()
         {   
+        }
+
+        public void IncreaseBalance(decimal value)
+        {
+            Amount += value;
+        }
+
+        public bool DecreaseBalance(decimal value)
+        {
+            if (Amount >= value)
+            {
+                Amount -= value;
+                return true;
+            }
+            return false;
         }
 
         public class Factories
