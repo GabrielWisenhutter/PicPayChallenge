@@ -64,7 +64,7 @@ namespace PicPay.Domain.Handlers
             }
              
             if (payer.Type == EWalletType.Merchant)
-                _notification.AddNotification("Merchant can't do transactions");
+                _notification.AddNotification("Merchant can't do transactions, only receive");
 
             if (payer.Amount < command.Amount)
                 _notification.AddNotification("Payer amount is smaller than the value of transaction");
