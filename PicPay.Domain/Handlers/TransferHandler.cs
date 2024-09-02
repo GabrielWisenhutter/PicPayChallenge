@@ -45,8 +45,8 @@ namespace PicPay.Domain.Handlers
             var payer = await _walletRepository.GetById(payerId);
             var payee = await _walletRepository.GetById(payeeId);
 
-            payer!.Amount -= command.Amount;
-            payee!.Amount += command.Amount;
+            payer!.DecreaseBalance(command.Amount);
+            payee!.IncreaseBalance(command.Amount);
 
             await _walletRepository.Update(payee);
             await _walletRepository.Update(payer);
@@ -66,7 +66,7 @@ namespace PicPay.Domain.Handlers
             if (payer.Type == EWalletType.Merchant)
                 _notification.AddNotification("Merchant can't do transactions, only receive");
 
-            if (payer.Amount < command.Amount)
+            if (payer.Amount <= command.Amount)
                 _notification.AddNotification("Payer amount is smaller than the value of transaction");
         }
     }
