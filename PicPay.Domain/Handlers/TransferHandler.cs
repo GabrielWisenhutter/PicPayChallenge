@@ -17,11 +17,11 @@ namespace PicPay.Domain.Handlers
         private readonly ITransferRepository _transferRepository;
         private readonly IWalletRepository _walletRepository;
         private readonly Notification _notification;
-        public TransferHandler(ITransferRepository transferRepository, IWalletRepository walletRepository)
+        public TransferHandler(ITransferRepository transferRepository, IWalletRepository walletRepository, Notification notification)
         {
             _transferRepository = transferRepository;
             _walletRepository = walletRepository;
-            _notification = new Notification();
+            _notification = notification;
         }
         public async Task<BaseResult> Handle(NewTransferCommand command)
         {

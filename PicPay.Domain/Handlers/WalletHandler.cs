@@ -16,11 +16,11 @@ namespace PicPay.Domain.Handlers
         private readonly IWalletRepository _repository;
         private readonly ISecurityService _securityService;
         private readonly Notification _notification;
-        public WalletHandler(IWalletRepository repository, ISecurityService securityService)
+        public WalletHandler(IWalletRepository repository, ISecurityService securityService, Notification notification)
         {
             _repository = repository;
             _securityService = securityService;
-            _notification = new Notification();
+            _notification = notification;
         }
         public async Task<BaseResult> Handle(NewWalletCommand command)
         {

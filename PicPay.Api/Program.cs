@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PicPay.Api.Settings;
+using PicPay.Domain.Extensions;
 using PicPay.Domain.Handlers;
 using PicPay.Domain.Interfaces;
 using PicPay.Infra.Data.Context;
@@ -20,6 +21,7 @@ builder.Services.AddScoped<ISecurityService, SecurityService>();
 builder.Services.AddScoped<ISecurityService, SecurityService>();
 builder.Services.AddScoped<TransferHandler, TransferHandler>();
 builder.Services.AddScoped<WalletHandler, WalletHandler>();
+builder.Services.AddScoped<Notification>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
